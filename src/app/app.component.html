@@ -1,0 +1,33 @@
+<h1>calculator</h1>
+<body>
+<div id='calc-contain'>
+
+
+
+  <input type="text" name="result" value="{{operation}}" />
+  <br/>
+  <input type="button" value=" 1 " (click)="append('1')"/>
+  <input type="button" value=" 2 " (click)="append('2')" />
+  <input type="button" value=" 3 " (click)="append('3')" />
+  <input type="button" value=" + " (click)="append('+')" />
+
+<br/>
+  <input type="button" value=" 4 " (click)="append('4')" />
+  <input type="button" value=" 5 " (click)="append('5')" />
+  <input type="button" value=" 6 " (click)="append('6')" />
+  <input type="button" value=" - " (click)="append('-')" />
+  <br/>
+  <input type="button" value=" 7 " (click)="append('7')" />
+  <input type="button" value=" 8 " (click)="append('8')" />
+  <input type="button" value=" 9 " (click)="append('9')" />
+  <input type="button" value=" x " (click)="append('*')" />
+  <br/>
+
+  <input type="button" value=" c " (click)="clear()" />
+  <input type="button" value=" 0 " (click)="append('0')" />
+  <input type="button" value=" = " (click)="evaluate()" />
+  <input type="button" value=" / " (click)="append('/')" />
+  <br/>
+
+</div>
+</body>
